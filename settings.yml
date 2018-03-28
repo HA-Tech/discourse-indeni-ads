@@ -1,6 +1,6 @@
-ad_1:
+top_ad:
     image_url: ""
     ad_url: ""
-ad_2:
+bottom_ad:
     image_url: ""
     ad_url: ""
