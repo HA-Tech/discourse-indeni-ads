@@ -1,7 +1,22 @@
+<script type='text/discourse-plugin' version="0.1">
+api.modifyClass('component:directory-item', {
+    actions: {
+        getTopAdUrl(){
+            return settings.top_ad_url;
+        }
+        getTopImgUrl(){
+            return settings.top_image_url;
+        }
+        getBottomAdUrl(){}
+        getBottomImgUrl(){}
+    }
+});
+</script>
+
 <script type='text/x-handlebars' data-template-name='/connectors/discovery-list-container-top/indeni-ads'>
 <div class="ad-block">
     <div class="ad-unit">
-        <a href=settings.top_ad_url><img src=settings.top_image_url alt="Ad" /></a>
+        <a href=directory-item.getTopAdUrl()><img src=directory-item.getTopImgUrl() alt="Ad" /></a>
     </div>
     <div class="ad-unit">
         <a href=settings.bottom_ad_url><img src=settings.bottom_image_url alt="Ad" /></a>
