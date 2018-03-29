@@ -1,6 +1,12 @@
-top_ad:
-    image_url: ""
-    ad_url: ""
-bottom_ad:
-    image_url: ""
-    ad_url: ""
+top_image_url:
+    default: "http://via.placeholder.com/150x200"
+    description: "Top Ad Image Source URL"
+top_ad_url:
+    default: "https://discourse.org"
+    description: "Top Ad Link URL"
+bottom_image_url:
+    default: "http://via.placeholder.com/150x200"
+    description: "Bottom Ad Image Source URL"
+bottom_ad_url:
+    default: "https://discourse.org"
+    description: "Bottom Ad Link URL"
