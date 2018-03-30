@@ -1,14 +1,10 @@
 <script type='text/discourse-plugin' version="0.1">
-api.modifyClass('component:directory-item', {
-    actions: {
-        getTopAdUrl(){
-            return settings.top_ad_url;
-        }
-        getTopImgUrl(){
-            return settings.top_image_url;
-        }
-        getBottomAdUrl(){}
-        getBottomImgUrl(){}
+api.registerConnectorClass('discovery-list-container-top', 'indeni-ads', {
+    setupComponent(args, component) {
+        component.set('top_ad_url', settings.top_ad_url);
+        component.set('top_image_url', settings.top_image_url);
+        component.set('bottom_ad_url', settings.bottom_ad_url);
+        component.set('bottom_image_url', settings.bottom_image_url);
     }
 });
 </script>
@@ -16,10 +12,10 @@ api.modifyClass('component:directory-item', {
 <script type='text/x-handlebars' data-template-name='/connectors/discovery-list-container-top/indeni-ads'>
 <div class="ad-block">
     <div class="ad-unit">
-        <a href=directory-item.getTopAdUrl()><img src=directory-item.getTopImgUrl() alt="Ad" /></a>
+        <a href={{top_ad_url}}><img src={{top_image_url}} alt="Ad" /></a>
     </div>
     <div class="ad-unit">
-        <a href=settings.bottom_ad_url><img src=settings.bottom_image_url alt="Ad" /></a>
+        <a href={{bottom_ad_url}}><img src={{bottom_image_url}} alt="Ad" /></a>
     </div>
 </div>
 </script>
