@@ -3,6 +3,8 @@ api.registerConnectorClass('discovery-list-container-top', 'indeni-ads', {
     setupComponent(args, component) {
         component.set('top_ad_url', settings.top_ad_url);
         component.set('top_image_url', settings.top_image_url);
+        component.set('middle_ad_url', settings.middle_ad_url);
+        component.set('middle_image_url', settings.middle_image_url);
         component.set('bottom_ad_url', settings.bottom_ad_url);
         component.set('bottom_image_url', settings.bottom_image_url);
     }
@@ -13,6 +15,9 @@ api.registerConnectorClass('discovery-list-container-top', 'indeni-ads', {
 <div class="ad-block">
     <div class="ad-unit">
         <a href={{top_ad_url}} target="_blank"><img src={{top_image_url}} alt="Ad" /></a>
+    </div>
+    <div class="ad-unit">
+        <a href={{middle_ad_url}} target="_blank"><img src={{middle_image_url}} alt="Ad" /></a>
     </div>
     <div class="ad-unit">
         <a href={{bottom_ad_url}} target="_blank"><img src={{bottom_image_url}} alt="Ad" /></a>

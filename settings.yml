@@ -4,6 +4,12 @@ top_image_url:
 top_ad_url:
     default: "https://discourse.org"
     description: "Top Ad Link URL"
+middle_image_url:
+    default: "http://via.placeholder.com/150x200"
+    description: "Middle Ad Image Source URL"
+middle_ad_url:
+    default: "https://discourse.org"
+    description: "Middle Ad Link URL"
 bottom_image_url:
     default: "http://via.placeholder.com/150x200"
     description: "Bottom Ad Image Source URL"
