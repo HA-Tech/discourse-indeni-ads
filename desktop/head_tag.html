@@ -1,5 +1,5 @@
 <script type='text/discourse-plugin' version="0.1">
-api.registerConnectorClass('discovery-list-container-top', 'indeni-ads', {
+api.registerConnectorClass('discovery-list-container-top', 'indeni-offers', {
     setupComponent(args, component) {
         component.set('top_ad_url', settings.top_ad_url);
         component.set('top_image_url', settings.top_image_url);
@@ -11,16 +11,16 @@ api.registerConnectorClass('discovery-list-container-top', 'indeni-ads', {
 });
 </script>
 
-<script type='text/x-handlebars' data-template-name='/connectors/discovery-list-container-top/indeni-ads'>
-<div class="ad-block">
-    <div class="ad-unit">
-        <a href={{top_ad_url}} target="_blank"><img src={{top_image_url}} alt="Ad" /></a>
+<script type='text/x-handlebars' data-template-name='/connectors/discovery-list-container-top/indeni-offers'>
+<div class="offer-block">
+    <div class="offer-unit">
+        <a href={{top_ad_url}} target="_blank"><img src={{top_image_url}} alt="Offer" /></a>
     </div>
-    <div class="ad-unit">
-        <a href={{middle_ad_url}} target="_blank"><img src={{middle_image_url}} alt="Ad" /></a>
+    <div class="offer-unit">
+        <a href={{middle_ad_url}} target="_blank"><img src={{middle_image_url}} alt="Offer" /></a>
     </div>
-    <div class="ad-unit">
-        <a href={{bottom_ad_url}} target="_blank"><img src={{bottom_image_url}} alt="Ad" /></a>
+    <div class="offer-unit">
+        <a href={{bottom_ad_url}} target="_blank"><img src={{bottom_image_url}} alt="Offer" /></a>
     </div>
 </div>
 </script>
