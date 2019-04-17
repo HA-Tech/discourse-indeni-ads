@@ -1,4 +1,4 @@
-.ad-block {
+.offer-block {
     float: right;
     width: 20%;
 }
@@ -6,10 +6,10 @@
     float: left;
     width: 80%;
 }
-.ad-unit {
+.offer-unit {
     margin-left: 10px;
 }
-.ad-unit img {
+.offer-unit img {
     -ms-interpolation-mode: nearest-neighbor; // IE 7+ (non-standard property)
     image-rendering: -webkit-crisp-edges; // Safari 7+
     image-rendering: -moz-crisp-edges; // Firefox 3.6+
@@ -18,7 +18,7 @@
     image-rendering: -webkit-optimize-contrast; // Safari 6, UC Browser 9.9
     width: 100%;
 }
-.ad-unit img:nth-of-type(1) {
+.offer-unit img:nth-of-type(1) {
     margin-top: 10px;
 }
 .footer-message {
@@ -30,7 +30,7 @@
 .wrap .contents {
   z-index: 1;
 }
-.discovery-list-container-top-outlet.indeni-ads{
+.discovery-list-container-top-outlet.indeni-offer{
   position: relative;
   z-index: 2;
 }
